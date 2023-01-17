@@ -56,8 +56,14 @@
   height: 5px;
   margin: 4px 0;
 }
-.header_contents .bottom{
+.bottom_contents {
+  color: #fafafa;
+  width: 80%;
+  height: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* Responsive style */
 @media screen and (max-width: 768px) {
@@ -76,6 +82,7 @@
     top: 0;
     right: -100%;
     transition: .5s;
+    z-index: 2;
   }
   .header_nav_lists {
     display: block;
