@@ -590,6 +590,46 @@ a.tag:hover {
 .skills .skill-group h3 {
   color: var(--text-muted);
 }
+.profile-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 18px 28px;
+  align-items: start;
+  margin-top: 26px;
+}
+.profile-split .profile-block {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+.brand-logos li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--border);
+}
+.brand-logos svg,
+.brand-logos img {
+  display: block;
+  height: 18px;
+  width: auto;
+}
+.brand-logos .logo-word {
+  height: 15px;
+}
 
 /* =========================================================
    Mail
@@ -799,6 +839,9 @@ a.tag:hover {
   .profile img {
     width: 88px;
     height: 88px;
+  }
+  .profile-split {
+    grid-template-columns: 1fr;
   }
   .timeline ul li .content h3 {
     font-size: 15px;
