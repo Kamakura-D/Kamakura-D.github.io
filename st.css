@@ -706,6 +706,67 @@ a.tag:hover {
 .product-group ul li {
   background-color: var(--bg-section);
 }
+.product ul li.has-thumb {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  column-gap: 14px;
+  row-gap: 12px;
+  align-items: center;
+}
+.product .thumb {
+  grid-column: 1;
+  grid-row: 1;
+  width: 112px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  line-height: 0;
+  cursor: pointer;
+}
+.product button.thumb {
+  appearance: none;
+  font: inherit;
+  color: inherit;
+}
+.product a.thumb,
+.product a.thumb:hover {
+  border-bottom-color: transparent;
+}
+.product .thumb img {
+  width: 112px;
+  height: 63px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+.product button.thumb:hover img {
+  opacity: 0.88;
+}
+.product .thumb:focus-visible,
+.product button.thumb[aria-expanded="true"] {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.product .thumb-body {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+}
+.product .thumb-body p {
+  margin-bottom: 0;
+}
+.product .player {
+  grid-column: 1 / -1;
+}
+.product .player iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: var(--radius-sm);
+}
 
 /* =========================================================
    Responsive
